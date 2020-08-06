@@ -1,0 +1,30 @@
+<view>
+<view class="top-bgcolor"></view>
+
+
+
+		<view class="search-box df j-center">
+			<view class="search-box-item df j-bettween  a-center ">
+      <view bindtap="back" class="back">返回 </view>
+				<view class="input-box2">
+					<input value="{{variable}}" bindinput="inputValue" bindconfirm="clickConfirm" focus='true' placeholder-style="background:#F2F2F2" class="test-input2" placeholder=" 请输入搜索关键字">
+					</input>
+
+					<view class="input-search-box2">
+						<image src="../../img/indexPage/input.png"></image>
+					</view>
+
+					<view bindtap="deletContent" wx:if="{{variable}}" class="input-delet">
+
+						<image src="../../img/search_delet.png">
+
+						</image>
+					</view>
+
+				</view>
+			
+
+			</view>
+		</view>
+
+</view>

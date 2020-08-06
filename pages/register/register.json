@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-tab": "../../lib/vant/tab",
+    "van-tabs": "../../lib/vant/tabs",
+    "van-field": "../../lib/vant/field",
+    "van-icon": "../../lib/vant/icon",
+    "van-toast": "../../lib/vant/toast"
+  },
+  "navigationStyle":"custom"
+}

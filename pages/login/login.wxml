@@ -1,0 +1,114 @@
+<view>
+
+	<view class="welcome ccc">
+
+	</view>
+	<view>
+		<van-tabs bind:click="onClick">
+			<van-tab title="手机登录">
+
+				<view class="logbox1 m-t-40">
+
+					<view>
+
+
+						<view class="login1-phone df">
+							<view class="log-icon1 ccc">
+								<view class="m-l-20 ccc">
+									<van-icon name="phone-o" />
+								</view>
+							</view>
+							<view class="df a-center login1-text ">手机号</view>
+							<view class="ccc m-l-20">:</view>
+							<view class="">
+								<input bindblur="getValue1"  placeholder-class="phone-input" placeholder="请输入手机号"></input>
+							</view>
+						</view>
+
+
+						<view class="login1-password m-t-30 df">
+							<view class="log-icon1 ccc">
+								<view class="m-l-20 ccc">
+									<van-icon name="coupon-o" />
+								</view>
+							</view>
+							<view class="df a-center login1-text ">密码</view>
+							<view class="ccc m-l-20">:</view>
+							<view class="">
+								<input bindblur="getValue2" class="" placeholder-class="phone-input" placeholder="请输入密码"></input>
+							</view>
+						</view>
+
+
+					</view>
+
+
+
+				</view>
+
+				<view class="login1-box df j-center ">
+					<view bindtap="goTologin1" class="login-button1">立即登录</view>
+					<view bindtap="goToRegister" class="register-button1">立即注册</view>
+				</view>
+
+
+			</van-tab>
+
+
+			<van-tab title="邮箱登录">
+
+				<view class="logbox2 m-t-40">
+
+
+					<view>
+
+
+						<view class="login1-phone df">
+							<view class="log-icon1 ccc">
+								<view class="m-l-20 ccc">
+									<van-icon name="phone-o" />
+								</view>
+							</view>
+							<view class="df a-center login1-text ">邮箱</view>
+							<view class="ccc m-l-20">:</view>
+							<view class="">
+								<input bindblur="getValue3" class=" " placeholder-class="phone-input" placeholder="请输入邮箱"></input>
+							</view>
+						</view>
+
+
+						<view class="login1-password m-t-30 df">
+							<view class="log-icon1 ccc">
+								<view class="m-l-20 ccc">
+									<van-icon name="coupon-o" />
+								</view>
+							</view>
+							<view class="df a-center login1-text ">密码</view>
+							<view class="ccc m-l-20">:</view>
+							<view class="">
+								<input  bindblur="getValue4" class="" placeholder-class="phone-input" placeholder="请输入密码"></input>
+							</view>
+						</view>
+
+
+					</view>
+
+
+				</view>
+
+				<view class="login1-box df j-center ">
+					<view bindtap="goTologin2" class="login-button1">立即登录</view>
+					<view bindtap="goToRegister" class="register-button1">立即注册</view>
+				</view>
+
+
+			</van-tab>
+
+
+
+
+
+
+		</van-tabs>
+	</view>
+</view>

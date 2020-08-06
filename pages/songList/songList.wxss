@@ -1,0 +1,41 @@
+.img-box{
+  width: 750rpx;
+  height: 488rpx;
+}
+.img-box image{
+  width: 100%;
+  height: 100%;
+}
+.m-r-40{
+  margin-right: 40rpx;
+}
+.df{
+  display: flex;
+
+}
+.j-bettween{
+  display: flex;
+  justify-content: space-between;
+}
+.playbox{
+  height: 80rpx;
+  margin-left: 40rpx;
+
+}
+.ccc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-loop-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 120rpx;
+  border-bottom: 1prx solid gray;
+}
+.text{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}

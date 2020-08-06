@@ -1,0 +1,198 @@
+<view class="search-box">
+	<view class="search1" wx:if="{{flag1}}">
+
+		<view class="top-bgcolor"></view>
+
+		<view class="search-box df j-center">
+			<view class="search-box-item df j-bettween  a-center">
+				<view class=" search-text m-l-20 fw6 ccc">音乐馆</view>
+				<view class="input-box" bindtap="goToSearch">
+					<input placeholder-style="background:#F2F2F2" class="test-input1" placeholder=" 请 搜 索">
+					</input>
+					<view class="input-search-box">
+						<image src="../../img/indexPage/input.png"></image>
+					</view>
+				</view>
+				<view class="music-pic-box  ccc">
+					<image src="../../img/indexPage/music.png"></image>
+				</view>
+			</view>
+		</view>
+
+		<view class="index-swiper">
+			<view class="idnex-swiper-box">
+				<view class="page-section page-section-spacing swiper">
+					<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="true" duration="{{duration}}">
+						<block wx:for="{{background}}" wx:key="index">
+							<swiper-item>
+								<view class="swiper-box">
+									<image src="{{item.pic}}"></image>
+								</view>
+							</swiper-item>
+						</block>
+					</swiper>
+				</view>
+			</view>
+		</view>
+
+		<view class="box-container">
+
+			<scroll-view class="scroll-view_H df" scroll-x="true" bindscroll="scroll" style="width: 100%">
+				<view class="df">
+					<view class="loop" wx:for="{{list}}" wx:key="index">
+						<view class="list-item  df a-center j-center f-column">
+							<view class="little-swiper ccc">
+								<image src="{{item.url}}"></image>
+							</view>
+							<view class="loop-text">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</view>
+
+		<view>
+			<view class="df m-t-50 m-b-10 j-bettween">
+				<view class="m-l-30 fs18 fw6 ccc">推荐歌单</view>
+				<view class="reconmmend-text2 m-r-30">歌单广场</view>
+			</view>
+			<view class="recommend-box">
+				<view class="recommend-container">
+					<view class="m-t-20" bindtap="goToListOfSong" data-item="{{item}}" data-index="{{index}}" wx:for="{{recommend}}" wx:key="index">
+						<view class="recommed-box">
+							<image src="{{item.picUrl}}"></image>
+						</view>
+						<view class="recommend-text">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+
+
+		</view>
+
+
+		<view>
+			<view class="df m-t-50 m-b-10 j-bettween">
+				<view class="m-l-30 ccc">
+					<text class="fs18 fw6">新碟</text>
+					<text class="m-l-20 clight">新歌</text>
+				</view>
+				<view class="reconmmend-text2 m-r-30">更多新碟</view>
+			</view>
+			<view class="recommend-box">
+				<view class="recommend-container">
+					<view class="m-t-20" wx:for="{{newDisc}}" wx:key="index">
+						<view class="recommed-box">
+							<image src="{{item.picUrl}}"></image>
+						</view>
+						<view class="recommend-text">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+
+
+		</view>
+
+		<view>
+			<view class="df m-t-50 m-b-10 j-bettween">
+				<view class="m-l-30 fs18 fw6 ccc">音乐新势力</view>
+				<view class="reconmmend-text2 m-r-30">新音乐</view>
+			</view>
+			<view class="recommend-box">
+				<view class="recommend-container">
+					<view class="m-t-20" wx:for="{{NewSong}}" wx:key="index">
+						<view class="recommed-box">
+							<image src="{{item.picUrl}}"></image>
+						</view>
+						<view class="recommend-text">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view>
+			<view class="df m-t-50 m-b-10 j-bettween">
+				<view class="m-l-30 fs18  fw6 ccc">推荐电台</view>
+				<view class="reconmmend-text2 m-r-30">电台广场</view>
+			</view>
+			<view class="recommend-box">
+				<view class="recommend-container">
+					<view class="m-t-20" wx:for="{{djProgram}}" wx:key="index">
+						<view class="recommed-box">
+							<image src="{{item.picUrl}}"></image>
+						</view>
+						<view class="recommend-text">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view>
+			<view class="df m-t-50 m-b-10 j-bettween">
+				<view class="m-l-30 fs18 fw6 ccc">推荐节目</view>
+				<view class="reconmmend-text2 m-r-30">更多节目</view>
+			</view>
+			<view class="recommend-box">
+				<view class="recommend-container">
+					<view class="m-t-20" wx:for="{{recommends}}" wx:key="index">
+						<view class="recommed-box">
+							<image src="{{item.blurCoverUrl}}"></image>
+						</view>
+						<view class="recommend-text">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+	</view>
+
+
+	<view wx:if="{{!flag1}}" class="search2">
+		<view class="top-bgcolor"></view>
+
+		<view class="search-box df j-center">
+			<view class="search-box-item df j-bettween  a-center ">
+				<view class="input-box2">
+					<input value="{{variable}}"  bindinput="inputValue" bindconfirm="clickConfirm" focus='true' placeholder-style="background:#F2F2F2" class="test-input2" placeholder=" 请输入搜索关键字">
+					</input>
+
+					<view class="input-search-box2">
+						<image src="../../img/indexPage/input.png"></image>
+					</view>
+
+					<view bindtap="deletContent" wx:if="{{variable}}" class="input-delet">
+
+						<image src="../../img/search_delet.png">
+
+						</image>
+					</view>
+
+				</view>
+				<view bindtap="goToSearch" class="fs18  concel ">
+					取消
+				</view>
+
+			</view>
+		</view>
+
+
+		<view wx:if="{{historyFlag===1}}">
+			<hotsearchlist bindsend='send' variable="{{variable}}"></hotsearchlist>
+
+		</view>
+
+
+	</view>
+</view>

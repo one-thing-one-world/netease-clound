@@ -1,0 +1,5 @@
+<view>
+ <view>
+   <search flag1="{{flag1}}"></search>
+ </view>
+</view>

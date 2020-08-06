@@ -1,0 +1,232 @@
+.m-t-50 {
+  margin-top: 50rpx;
+}
+
+.r1 {
+  border: 1rpx solid red;
+}
+
+.b1 {
+  border: 1rpx solid black;
+}
+
+.df {
+  display: flex;
+
+}
+
+.j-center {
+  display: flex;
+  justify-content: center;
+}
+
+.a-center {
+  display: flex;
+  align-items: center;
+}
+
+.j-bettween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.j-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.ccc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-t-20 {
+  margin-top: 20rpx;
+}
+
+.m-t-30 {
+  margin-top: 30rpx;
+}
+
+.m-t-40 {
+  margin-top: 40rpx;
+}
+
+.m-l-20 {
+  margin-left: 20rpx;
+}
+
+.m-l-30 {
+  margin-left: 30rpx;
+}
+
+.m-l-40 {
+  margin-left: 40rpx;
+}
+
+.m-r-20 {
+  margin-right: 20rpx;
+}
+
+.m-r-30 {
+  margin-right: 30rpx;
+}
+
+.m-r-40 {
+  margin-right: 40rpx;
+}
+
+.m-b-10 {
+  margin-bottom: 10rpx;
+}
+
+.m-b-20 {
+  margin-bottom: 20rpx;
+}
+
+.m-b-30 {
+  margin-bottom: 30rpx;
+}
+
+.m-b-40 {
+  margin-bottom: 40rpx;
+}
+
+.fw6 {
+  font-weight: 600;
+}
+
+
+/* this is commoncss */
+.box {
+
+  width: 100vw;
+
+
+}
+
+.inp-img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.inp-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.searchHot {
+  box-shadow: 0 0 10rpx gray;
+  position: absolute;
+  top: 17%;
+  left: 3%;
+  z-index: 999;
+  background: rgb(251, 251, 251);
+  width: 700rpx;
+
+
+
+}
+
+.hotSearchList-box:last-child {
+  margin-bottom: 20rpx;
+}
+
+.del-box {
+  padding: 20rpx 22rpx;
+}
+
+.number {
+  width: 40rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  color: gray;
+
+  padding-left: 20rpx;
+  padding-right: 20rpx
+}
+
+.loop-searchList:nth-child(1) {
+  font-weight: 700;
+}
+
+.loop-searchList:nth-child(1) .number {
+  color: red;
+}
+
+.loop-searchList:nth-child(2) {
+  font-weight: 700;
+}
+
+.loop-searchList:nth-child(2) .number {
+  color: red;
+}
+
+.loop-searchList:nth-child(3) {
+  font-weight: 700;
+}
+
+.loop-searchList:nth-child(3) .number {
+  color: red;
+}
+
+.loop-searchList {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.loop-searchList-text2 {
+  font-size: 28rpx;
+  color: gray;
+}
+
+.loop-searchList-text1 {
+  font-size: 30rpx;
+}
+
+.hot-text-box {
+  color: red;
+  font-size: 28rpx;
+  font-style: italic;
+}
+
+.searchVariable {
+  color: rgb(12, 46, 134);
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.hotSearchList-box {
+  color: rgb(85, 84, 84);
+}
+
+.line {
+  width: 100%;
+  height: 2rpx;
+  background: rgb(223, 219, 219);
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.delHistory {
+  height: 70rpx;
+
+}
+
+.history-loop-item {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border-radius: 70rpx;
+  white-space: nowrap;
+  font-size: 28rpx;
+  background: rgb(238, 235, 235);
+  
+}

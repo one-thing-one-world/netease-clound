@@ -1,0 +1,31 @@
+<view>
+
+	<view>
+		<view class="img-box">
+			<image src="{{playlist.backgroundCoverUrl}}"></image>
+		</view>
+
+	</view>
+	<view>
+		<view class="df j-bettween playbox">
+			<view class="ccc">播放全部(共{{privileges.length}}首)</view>
+			<view class="m-r-40">收藏</view>
+		</view>
+		<view>
+			<view wx:for="{{playlist.tracks}}" wx:key="index">
+				<view class="list-loop-item">
+					<view><text class="text">{{index}}</text>{{item.name}}</view>
+					<view class="m-r-40 ccc" bindtap="goToPlayPage" data-item="{{item}}" data-index="{{index}}">
+						播放
+					</view>
+				</view>
+				<view>
+
+				</view>
+
+			</view>
+		</view>
+	</view>
+
+
+</view>

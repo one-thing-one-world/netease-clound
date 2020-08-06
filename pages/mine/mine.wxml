@@ -1,0 +1,76 @@
+<view>
+	<view wx:if="{{!profile}}" class="box">
+
+		<view class="df f-column j-center a-center">
+
+			<view class="ccc log1">您还没有登录~</view>
+			<view class="ccc m-t-40">
+				<van-button bindtap="goToLogin" type="primary">登录</van-button>
+			</view>
+
+		</view>
+
+
+
+	</view>
+
+	<view class="profile-box df f-column a-center m-t-40" wx:if="{{profile}}">
+
+
+		<view class="profile-container">
+
+			<view class="df  j-bettween a-center">
+				<view class="df">
+					<view class="img-box">
+						<image src="{{profile.profile.avatarUrl}}"></image>
+					</view>
+					<view class=" df j-center f-column m-l-30">
+						<view>{{profile.profile.nickname}}</view>
+						<view class="ccc  level-box">
+							<view class="level b1">Lv{{profile.level}}</view>
+						</view>
+					</view>
+				</view>
+				<view>
+					<view class=" sigture">签到</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view>
+			<view class="df item1-box ">
+
+				<view class="item1">
+					<view>{{profile.profile.eventCount}}</view>
+					<view class="m-t-10">动态</view>
+				</view>
+				<view class="item1">
+					<view>{{profile.profile.follows}}</view>
+					<view>关注</view>
+				</view>
+				<view class="item1">
+					<view>{{profile.profile.followeds}}</view>
+					<view class="m-t-10">粉丝</view>
+				</view>
+				<view class="item1">
+					<view>
+						<view class="eidt-box">
+							<image src="../../img/edit/edit.png"></image>
+						</view>
+					</view>
+					<view bindtap="goToEditPage" class="m-t-10">编辑资料</view>
+				</view>
+
+			</view>
+
+		</view>
+
+		<view>
+			<view class="logoff ccc m-t-40" bindtap="logoff">退出登录</view>
+		</view>
+
+
+
+	</view>
+</view>

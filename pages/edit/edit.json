@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-area": "../../lib/vant/area/index",
+    "van-popup": "../../lib/vant/popup/index"
+  }
+}

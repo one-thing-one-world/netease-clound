@@ -1,0 +1,81 @@
+<view class="box">
+
+	<view class=" del-box">
+
+		<view wx:if="{{historyList}}">
+			<view class="df j-bettween">
+				<view class="fw6">历史记录</view>
+				<view bindtap="deletHistory">删除</view>
+			</view>
+
+			<view>
+				<scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+					<view class=" df ">
+
+						<view class="delHistory  m-r-30 ccc" wx:for="{{historyList}}" wx:key="index">
+
+							<view class="history-loop-item "> {{item}}</view>
+
+						</view>
+
+
+					</view>
+				</scroll-view>
+			</view>
+
+		</view>
+
+		<view>
+			<view>
+				<view class="m-t-40 fw6 m-b-40">热搜榜</view>
+				<view>
+
+					<view class=" loop-searchList" wx:for="{{searchList}}" wx:key="index">
+
+						<view class="df">
+							<view class=" df a-center number">
+								{{index+1}}
+							</view>
+							<view>
+								<view class="loop-searchList-text1">{{item.searchWord}} <text class="hot-text-box" wx:if="{{index<3}}">HOT</text> </view>
+								<view class="loop-searchList-text2">{{item.content}}</view>
+							</view>
+						</view>
+
+
+					</view>
+
+				</view>
+			</view>
+		</view>
+
+
+	</view>
+
+
+	<view>
+		<view class="searchHot" wx:if="{{variable}}">
+			<view>
+				<view class="searchVariable">搜索:"<text>{{variable}}</text>" </view>
+				<view class="line"></view>
+				<view bindtap="goToOneSong" class="hotSearchList-box" wx:for="{{hotSearchList}}" data-item="{{item}}" data-index="{{index}}" wx:key="index">
+					<view class="df ">
+						<view class="inp-img m-l-20">
+							<image src="../../img/indexPage/input.png"></image>
+						</view>
+						<view class="m-l-20">
+							{{item.keyword}}
+						</view>
+
+					</view>
+
+					<view wx:if="{{index<hotSearchList.length-1}}" class="line"></view>
+
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+
+</view>

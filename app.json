@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/singer/singer",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/edit/edit",
+    "pages/searchDetailPage/searchDetailPage",
+    "pages/playSong/playSong",
+    "pages/playList/playList",
+    "pages/songList/songList"
+    
+  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#e00000",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "img/indexPage/home1.png",
+        "selectedIconPath": "img/indexPage/home2.png"
+      },
+      {
+        "text": "歌手",
+        "pagePath": "pages/singer/singer",
+        "iconPath": "img/indexPage/singer1.png",
+        "selectedIconPath": "img/indexPage/singer2.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "img/indexPage/mine.png",
+        "selectedIconPath": "img/indexPage/mine2.png"
+      }
+    ]
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,44 @@
+<view class="edit-container">
+	<view class="edit-box">
+		<view class="df j-bettween">
+			<view>昵称</view>
+			<view>
+
+				<view>{{profile.profile.nickname}}></view>
+
+			</view>
+		</view>
+
+		<view class="df j-bettween">
+			<view>性别</view>
+			<view>
+				<view wx:if="{{profile.profile.gender===1}}">男></view>
+				<view wx:if="{{profile.profile.gender===0}}">女></view>
+			</view>
+		</view>
+		<view class="df j-bettween">
+			<view>生日</view>
+			<view>{{birthday}}</view>
+		</view>
+		<view class="df j-bettween">
+			<view>城市</view>
+	
+
+			<view class="section">
+			
+				<picker mode="region" bindcancel="bindcancel" custom-item="{{customItem}}" bindchange="bindRegionChange">
+					<view class="picker">
+					{{region[0]}}，{{region[1]}}
+					</view>
+				</picker>
+			</view>
+
+		</view>
+		<view>
+			<view>签名</view>
+			<view>{{profile.profile.signature}}</view>
+		</view>
+	</view>
+
+
+</view>

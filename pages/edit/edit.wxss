@@ -1,0 +1,118 @@
+.m-t-50 {
+  margin-top: 50rpx;
+}
+
+.r1 {
+  border: 1rpx solid red;
+}
+
+.b1 {
+  border: 1rpx solid black;
+}
+
+.df {
+  display: flex;
+
+}
+
+.j-center {
+  display: flex;
+  justify-content: center;
+}
+
+.a-center {
+  display: flex;
+  align-items: center;
+}
+
+.j-bettween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.j-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.ccc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m-t-10{
+  margin-top: 10rpx;
+}
+
+.m-t-20 {
+  margin-top: 20rpx;
+}
+
+.m-t-30 {
+  margin-top: 30rpx;
+}
+
+.m-t-40 {
+  margin-top: 40rpx;
+}
+
+.m-l-20 {
+  margin-left: 20rpx;
+}
+
+.m-l-30 {
+  margin-left: 30rpx;
+}
+
+.m-l-40 {
+  margin-left: 40rpx;
+}
+
+.m-r-20 {
+  margin-right: 20rpx;
+}
+
+.m-r-30 {
+  margin-right: 30rpx;
+}
+
+.m-r-40 {
+  margin-right: 40rpx;
+}
+
+.m-b-10 {
+  margin-bottom: 10rpx;
+}
+
+.m-b-20 {
+  margin-bottom: 20rpx;
+}
+
+.m-b-30 {
+  margin-bottom: 30rpx;
+}
+
+.m-b-40 {
+  margin-bottom: 40rpx;
+}
+
+.fw6 {
+  font-weight: 600;
+}
+
+/* this is common css */
+
+.edit-box{
+  width: 700rpx;
+}
+.edit-container{
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+}

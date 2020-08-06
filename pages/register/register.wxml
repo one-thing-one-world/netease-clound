@@ -1,0 +1,106 @@
+<view>
+
+	<view class="welcome ccc">
+
+	</view>
+	<view>
+
+
+		<view class="logbox1 m-t-40">
+
+			<view>
+
+
+				<view class="login1-phone df">
+					<view class="log-icon1 ccc">
+						<view class="m-l-20 ccc">
+							<van-icon name="phone-o" />
+						</view>
+					</view>
+					<view class="df a-center login1-text">手机号</view>
+					<view class="ccc m-l-20">:</view>
+					<view class="">
+						<input class=" " type="number" bindblur="getValue1" value="{{value1}}" placeholder-class="phone-input" placeholder="请输入手机号"></input>
+					</view>
+				</view>
+
+
+				<view class="login1-password m-t-30 df">
+					<view class="log-icon1 ccc">
+						<view class="m-l-20 ccc">
+							<van-icon name="coupon-o" />
+						</view>
+					</view>
+					<view class="df a-center login1-text ">密码</view>
+					<view class="ccc m-l-20">:</view>
+					<view class="">
+						<input class="" bindblur="getValue2" value="{{value2}}" placeholder-class="phone-input" placeholder="请输入密码"></input>
+					</view>
+				</view>
+
+
+			</view>
+
+
+
+		</view>
+
+
+
+
+
+		<view class="logbox2 m-t-40">
+
+
+			<view>
+
+
+				<view class="login1-phone df">
+					<view class="log-icon1 ccc">
+						<view class="m-l-20 ccc">
+							<van-icon name="phone-o" />
+						</view>
+					</view>
+					<view class="df a-center  login1-text ">验证码</view>
+					<view class="ccc m-l-20">:</view>
+					<view class="verify">
+						<input class=" " bindblur="getValue3" value="{{value3}}" placeholder-class="phone-input" placeholder="请输入验证码"></input>
+					</view>
+					<view bindtap="sendVerifyCode" wx:if="{{!flag}}" class="sendVerify ccc ">发送验证码</view>
+					<view class="sendVerify ccc " wx:if="{{flag}}">{{time}}</view>
+				</view>
+
+
+				<view class="login1-password m-t-30 df">
+					<view class="log-icon1 ccc">
+						<view class="m-l-20 ccc">
+							<van-icon name="coupon-o" />
+						</view>
+					</view>
+					<view class="df a-center login1-text ">昵称</view>
+					<view class="ccc m-l-20">:</view>
+					<view class="">
+						<input class="" bindblur="getValue4" value="{{value4}}" placeholder-class="phone-input" placeholder="请输入昵称"></input>
+					</view>
+				</view>
+
+
+			</view>
+
+
+		</view>
+
+		<view class="login1-box df j-center ">
+			<view class="login-button1">立即登录</view>
+			<view bindtap="handleRegister" class="register-button1">立即注册</view>
+		</view>
+
+
+
+
+
+
+
+
+	</view>
+</view>

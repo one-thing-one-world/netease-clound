@@ -1,0 +1,354 @@
+.m-t-50 {
+  margin-top: 50rpx;
+}
+
+.r1 {
+  border: 1rpx solid red;
+}
+
+.b1 {
+  border: 1rpx solid black;
+}
+
+.df {
+  display: flex;
+
+}
+
+.j-center {
+  display: flex;
+  justify-content: center;
+}
+
+.a-center {
+  display: flex;
+  align-items: center;
+}
+
+.j-bettween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.j-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.ccc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-t-20 {
+  margin-top: 20rpx;
+}
+
+.m-t-30 {
+  margin-top: 30rpx;
+}
+
+.m-t-40 {
+  margin-top: 40rpx;
+}
+
+.m-l-20 {
+  margin-left: 20rpx;
+}
+
+.m-l-30 {
+  margin-left: 30rpx;
+}
+
+.m-l-40 {
+  margin-left: 40rpx;
+}
+
+.m-r-20 {
+  margin-right: 20rpx;
+}
+
+.m-r-30 {
+  margin-right: 30rpx;
+}
+
+.m-r-40 {
+  margin-right: 40rpx;
+}
+
+.m-b-10 {
+  margin-bottom: 10rpx;
+}
+
+.m-b-20 {
+  margin-bottom: 20rpx;
+}
+
+.m-b-30 {
+  margin-bottom: 30rpx;
+}
+
+.m-b-40 {
+  margin-bottom: 40rpx;
+}
+
+.fw6 {
+  font-weight: 600;
+}
+
+/* top is commoncss */
+
+.search-box {
+  background: rgb(250, 250, 249);
+}
+
+.music-pic-box {
+  width: 60rpx;
+  height: 60rpx;
+
+}
+
+.music-pic-box image {
+  width: 100%;
+  height: 100%;
+}
+
+.top-bgcolor {
+  width: 750rpx;
+  height: 120rpx;
+  background: rgb(250, 250, 249);
+}
+
+.search-box {
+  width: 750rpx;
+  background: rgb(250, 250, 249);
+
+
+}
+
+.search-box-item {
+  width: 710rpx;
+
+}
+
+.test-input1 {
+  text-align: center;
+
+  height: 70rpx;
+  width: 450rpx;
+  border-radius: 30rpx;
+
+
+}
+
+.search-text {
+
+  font-size: 36rpx;
+  font-weight: 500;
+  letter-spacing: 6rpx;
+
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-search-box {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 16rpx;
+  left: 29%;
+  z-index: 999;
+
+}
+
+.input-search-box image {
+  width: 100%;
+  height: 100%;
+}
+
+.test-input2 {
+
+
+  height: 70rpx;
+  width: 540rpx;
+  background: #F2F2F2;
+
+
+}
+
+.input-box2 {
+  position: relative;
+  background: #fafafa;
+}
+
+.input-search-box2 {
+  position: absolute;
+  z-index: 999;
+  top: 16rpx;
+  left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+
+  background: #F2F2F2
+}
+
+.input-search-box2 image {
+  width: 100%;
+  height: 100%;
+}
+
+.test-input2 {
+  padding-left: 60rpx;
+}
+
+.fs18 {
+  font-size: 36rpx;
+}
+
+.swiper-box {
+  display: flex;
+  justify-content: center;
+  width: 750rpx;
+
+}
+
+.swiper-box image {
+  width: 700rpx;
+  height: 300rpx;
+  border-radius: 40rpx;
+}
+
+.index-swiper {
+  margin-top: 40rpx;
+}
+
+.little-swiper {
+  width: 90rpx;
+  height: 90rpx;
+  background: rgb(223, 52, 52);
+  border-radius: 50% 50%;
+}
+
+.little-swiper image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.box-container {
+  margin-top: 40rpx;
+}
+
+.list-box {
+  background: black;
+  color: white;
+}
+
+.list-item {
+  width: 132rpx;
+  white-space: nowrap;
+  font-size: 28rpx;
+
+}
+
+.loop:nth-child(1) {
+  margin-left: 30rpx;
+}
+
+.loop-text {
+  margin-top: 6rpx;
+}
+
+.loop:nth-child(5) .little-swiper image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.loop:nth-child(6) .little-swiper image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.loop:nth-child(8) .little-swiper image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.recommed-box {
+  width: 220rpx;
+  height: 150rpx;
+}
+
+.recommed-box image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12rpx;
+}
+
+.recommend-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 220rpx;
+}
+
+.recommend-box {
+  display: flex;
+
+  justify-content: center;
+  width: 750rpx;
+}
+
+.recommend-container {
+  width: 710rpx;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reconmmend-text2 {
+  font-size: 28rpx;
+
+  background: rgb(243, 240, 240);
+  border-radius: 30rpx;
+  padding: 10rpx 16rpx;
+  color: rgb(112, 107, 107);
+}
+
+.clight {
+  color: gray;
+}
+
+.concel {
+
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: 18rpx;
+
+}
+
+.input-delet {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 14rpx;
+  right: 20rpx;
+  z-index: 999;
+}
+
+.input-delet image {
+  width: 100%;
+  height: 100%;
+  
+}
+

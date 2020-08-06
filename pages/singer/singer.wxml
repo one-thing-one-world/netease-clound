@@ -1,0 +1,59 @@
+<view>
+
+	<view></view>
+
+	<view class="loop1">
+		<van-tabs animated bind:click="onClick" active="{{ active }}">
+			<view>
+
+				<view wx:for="{{singerlist}}" data-item="{{item}}" data-index="{{index}}" wx:key="index">
+
+					<van-tab title="{{item.name}}">
+
+
+
+					</van-tab>
+				</view>
+
+			</view>
+
+		</van-tabs>
+	</view>
+
+	<view wx:if="{{index>0}}" class="df m-t-10">
+		<scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+			<view class="df fs30 m-l-40">
+				<view bindtap="clickEnglish" data-item="{{item}}" data-index="{{index}}" class="m-l-20" wx:for="{{zimu}}" wx:key="index">
+
+					<view>
+
+						<view class="loop2-item {{flag==index?'bgcolor':''}}"> {{item.name}} </view>
+
+
+					</view>
+
+
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+
+	<view>
+
+
+		<view class="df m-t-30 m-l-30" wx:for="{{artists}}" wx:key="index">
+
+			<view class="image-box">
+				<image src="{{item.img1v1Url}}"></image>
+			</view>
+
+			<view class="ccc">
+				<view class="m-l-30">{{item.name}}</view>
+			</view>
+
+
+		</view>
+
+	</view>
+
+</view>

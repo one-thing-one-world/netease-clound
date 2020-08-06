@@ -1,0 +1,195 @@
+.m-t-50 {
+  margin-top: 50rpx;
+}
+
+.r1 {
+  border: 1rpx solid red;
+}
+
+.b1 {
+  border: 1rpx solid black;
+}
+
+.df {
+  display: flex;
+
+}
+
+.j-center {
+  display: flex;
+  justify-content: center;
+}
+
+.a-center {
+  display: flex;
+  align-items: center;
+}
+
+.j-bettween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.j-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.ccc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m-t-10{
+  margin-top: 10rpx;
+}
+
+.m-t-20 {
+  margin-top: 20rpx;
+}
+
+.m-t-30 {
+  margin-top: 30rpx;
+}
+
+.m-t-40 {
+  margin-top: 40rpx;
+}
+
+.m-l-20 {
+  margin-left: 20rpx;
+}
+
+.m-l-30 {
+  margin-left: 30rpx;
+}
+
+.m-l-40 {
+  margin-left: 40rpx;
+}
+
+.m-r-20 {
+  margin-right: 20rpx;
+}
+
+.m-r-30 {
+  margin-right: 30rpx;
+}
+
+.m-r-40 {
+  margin-right: 40rpx;
+}
+
+.m-b-10 {
+  margin-bottom: 10rpx;
+}
+
+.m-b-20 {
+  margin-bottom: 20rpx;
+}
+
+.m-b-30 {
+  margin-bottom: 30rpx;
+}
+
+.m-b-40 {
+  margin-bottom: 40rpx;
+}
+
+.fw6 {
+  font-weight: 600;
+}
+
+/* this is conmmon css */
+.welcome {
+  height: 140rpx;
+  background: red;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 4rpx;
+}
+
+.welcome-top {
+  height: 100rpx;
+}
+
+.login1-box {
+  margin-top: 150rpx;
+}
+
+.login1-box view {
+  height: 100rpx;
+  color: white;
+  margin-right: 60rpx;
+  margin-left: 60rpx;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+
+.login-button1 {
+  background: #EE0A24;
+}
+
+.register-button1 {
+  background: #FF976A;
+}
+
+.log-icon1 {
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logbox1 input {
+  height: 80rpx;
+  width: 460rpx;
+  margin-left: 40rpx;
+  padding-left: 20rpx;
+}
+.logbox2 input {
+  height: 80rpx;
+  width: 460rpx;
+  margin-left: 40rpx;
+  padding-left: 20rpx;
+}
+.verify input{
+  height: 80rpx;
+  width: 300rpx;
+  margin-left: 40rpx;
+  padding-left: 20rpx;
+}
+.sendVerify{
+  width: 160rpx;
+  font-size: 28rpx;
+  color: white;
+  background: rgb(42, 185, 42);
+}
+.login1-text {
+  width: 100rpx;
+}
+
+.phone-input {
+
+  font-size: 36rpx;
+
+  padding-left: 20rpx;
+
+}
+.login1-phone{
+  border-top: 2rpx solid rgb(226, 217, 217);
+  border-bottom: 2rpx solid rgb(226, 217, 217);
+}
+.login1-password{
+  border-top: 2rpx solid rgb(226, 217, 217);
+  border-bottom: 2rpx solid rgb(226, 217, 217);
+}

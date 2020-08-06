@@ -1,0 +1,37 @@
+<view>
+	<view class="img-container ">
+		<view bindtap="changeStatus" class="img-box {{rotateFlag?'rotateFlag':'rotateFlag1'}}">
+			<image src="http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"></image>
+		</view>
+	</view>
+
+	<view>
+
+		<view class="content-box">
+
+
+			<view class="section section_gap">
+
+				<view class="ccc">{{time1}}</view>
+
+				<view class="body-view">
+					<slider value="{{value}}" bindchange="slider1change" min="0" max="200" />
+				</view>
+				<view class="ccc">{{time2}}</view>
+			</view>
+
+		</view>
+		<view class="play-box">
+
+			<view class="button-box">
+				<view>随机</view>
+				<view>上一首</view>
+				<view>播放</view>
+				<view>下一首</view>
+				<view>全部</view>
+			</view>
+
+		</view>
+	</view>
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "hotsearchlist":"../../components/hotsearchlist/hotsearchlist",
+    "searchdetail":"../../components/searchdetail/searchdetail"
+  }
+}
